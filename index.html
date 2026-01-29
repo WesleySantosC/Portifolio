@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wesley | Portfólio</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="service/service.js" defer></script>
+</head>
+<body class="dark">
+
+    <!-- Botão de idioma -->
+    <div class="controls">
+        <button id="lang-toggle" title="Click to change language">PT/EN</button>
+    </div>
+
+    <!-- Fundo com partículas -->
+    <div class="particles"></div>
+
+    <!-- Menu -->
+    <nav class="navigation">
+        <ul class="menu">
+            <li><a href="#home" class="menu_home">Home</a></li>
+            <li><a href="#about_me" class="menu_aboute_me">About me</a></li>
+            <li><a href="#my_projects" class="menu_my_project">My Projects</a></li>
+            <li><a href="#contact_me" class="menu_contact_me">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <main id="home" class="header">
+        <img src="./img/wesley.jpeg" alt="image of a person" class="profile_photo">
+        <h1 class="header_name">Wesley Santos Cardoso</h1>
+        <p class="header_subTitle">Backend Developer</p>
+    </main>
+
+    <!-- Sobre mim -->
+    <section id="about_me" class="about_me">
+        <h2 class="about_title">About Me</h2>
+        <div class="about_box">
+            <p class="about_paragraph">
+                Hi, my name is Wesley! I'm a Software Engineering student at <b>UNOPAR</b>.<br>
+                My main programming language is <b>PHP</b>, and I enjoy combining it with <b>jQuery</b> to build dynamic websites.<br>
+                I also have experience with <b>MySQL</b>, <b>CodeIgniter 4</b>, and <b>Docker</b>.<br>
+                Currently, I'm focused on improving my skills in <b>web development</b>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="my_projects" class="my_projects">
+        <h2 class="projects_title">My Projects - On GitHub</h2>
+        <div class="project-box">
+            <a href="https://github.com/WesleySantosC/API-VIA-CEP" target="_blank" class="project_link">
+                <div class="project_card">
+                    <img src="./img/viaCep.png" alt="Project Via CEP" class="project_image">
+                    <div class="box_text_project">
+                        <h3 class="info_project">Project Via CEP</h3>
+                        <p class="paragraph_project">This project was a great opportunity to learn and practice JavaScript.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/WesleySantosC/To-do-List" target="_blank" class="project_link">
+                <div class="project_card">
+                    <img src="./img/to-do.png" alt="Project To-do List" class="project_image">
+                    <div class="box_text_project">
+                        <h3 class="info_project">Project To-do List</h3>
+                        <p class="paragraph_project">A simple To-Do website to manage daily tasks and organize them by status.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://muvysystem.com.br/" target="_blank" class="project_link">
+                <div class="project_card">
+                    <img src="./img/project_ws_integration.png" alt="Real Estate Integration Project" class="project_image">
+                    <div class="box_text_project">
+                        <h3 class="info_project">Real Estate Integration Project</h3>
+                        <p class="paragraph_project">A tool for real estate agents to generate a single URL with all client properties, eliminating repeated ad entries.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <div class="skills">
+        <h2 id="title_skills">My Skills</h2>
+        <div class="skills-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" title="HTML" class="skill_icon"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" title="CSS" class="skill_icon"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" class="skill_icon"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" alt="CodeIgniter" title="CodeIgniter" class="skill_icon"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" title="PHP" class="skill_icon"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" title="Git" class="skill_icon"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" title="Docker" class="skill_icon"/>
+        </div>
+    </div>
+
+    <!-- Contato -->
+    <section id="contact_me" class="contact_me">
+        <h2 class="contact_title">Contact</h2>
+        <form class="form_contact" id="form">
+            <div class="group_form">
+                <input type="text" placeholder="Name" class="field_form" id="name" autocomplete="off">
+            </div>
+            <div class="group_form">
+                <textarea class="field_form" placeholder="Type your message" id="message" rows="4"></textarea>
+            </div>
+            <input type="submit" class="button_form" value="Send WhatsApp">
+        </form>
+    </section>
+
+</body>
+</html>

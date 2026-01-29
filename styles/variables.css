@@ -1,0 +1,8 @@
+:root {
+    --primary  : #4f46e5;
+    --secondary: #7c3aed;
+    --dark     : #0f172a;
+    --moreDark : #0a0f1c;
+    --light    : #e2e8f0;
+    --glass    : rgba(255,255, 255, 0.1)
+}
